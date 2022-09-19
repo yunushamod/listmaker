@@ -11,6 +11,9 @@ import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.yunushamod.android.listmaker.databinding.FragmentMainBinding
 
+/**
+ * Any activity hosting this fragment must implement the `ListSelectionClickHandler` interface
+ */
 class MainFragment : Fragment() {
     private var listSelectionClickHandler: ListSelectionClickHandler? = null
     private lateinit var binding: FragmentMainBinding

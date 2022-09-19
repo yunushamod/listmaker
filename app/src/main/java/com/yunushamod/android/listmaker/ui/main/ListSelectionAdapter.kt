@@ -29,6 +29,10 @@ class ListSelectionAdapter(private val listOfTasks: List<TaskList>, private val 
     }
 }
 
+
+/**
+ * A simple interface that helps pass a `TaskList` object from `MainFragment` to the hosting activity
+ */
 interface ListSelectionClickHandler{
     fun onTaskListClicked(taskList: TaskList)
 }
